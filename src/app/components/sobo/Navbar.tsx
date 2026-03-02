@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Menu, X } from 'lucide-react';
-import { ImageWithFallback } from '../figma/ImageWithFallback';
-import soboLogo from 'figma:asset/9183c6defaaf23f6f25156aeb61a6f8a9f586b41.png';
+
+import soboLogo from "../../../assets/9183c6defaaf23f6f25156aeb61a6f8a9f586b41.png";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +28,7 @@ export const Navbar = () => {
       <div className="container mx-auto px-6 flex justify-between items-center">
         <a href="/" className="z-50 hover:opacity-80 transition-opacity">
           <div className="relative h-16 w-32">
-            <ImageWithFallback 
+            <img
               src={soboLogo}
               alt="SOBO Studio"
               className="absolute -top-12 left-0 h-96 w-auto max-w-none object-contain invert"
